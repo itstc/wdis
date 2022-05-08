@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import Dropper from './Dropper';
+
+const Container = styled.div`
+  overflow: auto;
+  background-color: #323232;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <div>
+        <h2>Why Do I Suck?</h2>
+        <p>Lost Ark log breakdown on why you suck</p>
+        <Dropper/>
+      </div>
+    </Container>
   );
 }
 
